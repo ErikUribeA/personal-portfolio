@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
     const translate = useTranslations('about')
     return (
-        <section className="min-h-screen flex items-center p-4">
+        <section className="min-h-[calc(100vh-200px)] lg:min-h-[calc(100vh-100px)] flex items-center p-4">
             <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <div className="relative w-64 h-64 flex mx-auto md:mx-auto">
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full animate-pulse"></div>
@@ -19,7 +19,7 @@ export default function About() {
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-4xl font-bold mb-6 ">
+                    <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">
                         {translate('title')}
                     </h2>
                     <p className="text-lg mb-6">
