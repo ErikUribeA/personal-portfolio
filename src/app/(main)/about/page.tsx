@@ -11,7 +11,7 @@ export default function About() {
                     <div className="absolute inset-2 bg-blue-900 rounded-full overflow-hidden">
                         <Image
                             src="/images/profile2.jpg"
-                            alt="profile"    
+                            alt="profile"
                             layout="fill"
                             objectFit="cover"
                             className="rounded-full"
