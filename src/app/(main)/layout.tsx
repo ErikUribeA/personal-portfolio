@@ -30,7 +30,7 @@ export default async function Layout({
                 <NextIntlClientProvider messages={messages}>
                     <div className={`${inter.className} flex flex-col min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-teal-800 text-white`}>
                         <MainNavBar />
-                        <main className="flex-grow container mx-auto py-10 lg:py-0  px-6 mt-[100px] lg:mt-0 ">
+                        <main className="flex-grow container mx-auto py-10 lg:py-0  px-6 mt-[50px] lg:mt-0 ">
                             {children}
                         </main>
                         <FloatingButton />
