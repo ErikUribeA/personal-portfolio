@@ -19,7 +19,9 @@ export default function About() {
                     </div>
                 </div>
                 <div>
-                    <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> {translate('title')} </h2>
+                    <h2 className="text-4xl font-bold mb-6 ">
+                        {translate('title')}
+                    </h2>
                     <p className="text-lg mb-6">
                         {translate('text')}
                     </p>
