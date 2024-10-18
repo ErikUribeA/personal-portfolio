@@ -1,0 +1,55 @@
+.footer
+    background-color: rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(16px)
+    padding: 2rem 0
+
+.footer__container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 1.5rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    @media (max-width: 1080px)
+        flex-direction: column
+
+
+.footer__copyright
+    color: #d1d5db
+
+.footer__social-links
+    display: flex
+    gap: 1rem
+    margin-top: 1rem
+
+    @media (min-width: 768px)
+        margin-top: 0px
+
+.footer__social-link
+    border-radius: 9999px
+    padding: 0.5rem
+    transition: all 0.3s
+
+.footer__social-link--email
+    color: #f472b6
+    &:hover
+        color: #fff
+        background-color: #ec4899
+
+.footer__social-link--github
+    color: #c084fc
+    &:hover
+        color: #fff
+        background-color: #a855f7
+
+.footer__social-link--linkedin
+    color: #60a5fa
+    &:hover
+        color: #fff
+        background-color: #3b82f6
+
+.footer__social-icon
+    width: 1.5rem
+    height: 1.5rem

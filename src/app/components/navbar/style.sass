@@ -1,0 +1,67 @@
+// Variables
+$purple-400: #9f7aea
+$pink-400: #f687b3
+$pink-600: #d53f8c
+
+// Mixins
+@mixin gradient-text
+    background-image: linear-gradient(to right, $purple-400, $pink-600)
+    -webkit-background-clip: text
+    background-clip: text
+    color: transparent
+
+// Styles
+.header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 50
+    background-color: rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(16px)
+
+.nav
+    max-width: 1280px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1rem 1.5rem
+    flex-direction: row
+    text-align: center
+
+    @media (max-width: 1080px)
+        flex-direction: column
+        justify-content: center
+
+.logo
+    font-size: 1.5rem
+    font-weight: 700
+    @include gradient-text // Correctly indented
+
+.nav-list
+    display: flex
+    flex-direction: row
+
+    @media (max-width: 1080px)
+        flex-direction: column
+
+li
+    margin-left: 1.5rem
+    text-align: center
+
+    &:first-child
+        margin-left: 0
+
+    @media (max-width: 1080px)
+        flex-direction: column
+        margin-left: 0
+
+.nav-link
+    transition: color 0.3s ease
+
+    &:hover
+        color: $pink-400
+
+    &.active
+        color: $pink-400

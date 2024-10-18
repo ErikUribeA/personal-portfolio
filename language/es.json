@@ -1,0 +1,67 @@
+{
+    "navbar": {
+        "logo": "Mi Portafolio",
+        "home": "Inicio",
+        "about": "Sobre mi",
+        "projects": "Projectos",
+        "contact": "Contacto"
+    },
+    "footer": "Mi Portafolio. Todos los derechos reservados",
+    "home": {
+        "greetings": "Hola, Soy Erik Josue Uribe Arciniegas",
+        "subTitle": "Desarrollador Web",
+        "button": "Conóceme"
+    },
+    "about": {
+        "title": "Sobre Mi",
+        "text": "Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales. Con experiencia en nextJS, TypeScript, CSS, TailWind, SASS, HTML5, me esfuerzo por combinar diseño atractivo con código eficiente para crear soluciones web innovadoras y de alto impacto."
+    },
+    "projects": {
+        "tecnologys": "Hecho con:",
+        "title": "Mis Projectos",
+        "gitHub": "Ver en GitHub",
+        "web": "Ver Sitio Web",
+        "project1": {
+            "title": "E-commerce con inicio de sesión de Google",
+            "description": "Este es un E-commerce para vender productos"
+        },
+        "project2": {
+            "title": "Página de publicaciones",
+            "description": "Esta es una página donde puedes publicar"
+        },
+        "project3": {
+            "title": "RestAdmin",
+            "description": "Esta es una página para gestionar restaurantes"
+        },
+        "project4": {
+            "title": "Dragon Ball Z API",
+            "description": "Esta es una página que muestra todos los personajes de Dragon Ball Z"
+        },
+        "project5": {
+            "title": "Rick and Morty API",
+            "description": "Esta es una página que muestra todos los personajes de Rick and Morty"
+        },
+        "project6": {
+            "title": "TriCasas",
+            "description": "Esta es una página web donde puedes contratar servicios y mostrar tu trabajo"
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "subTitle": "Envíame un mensaje",
+        "description": "Completa el formulario y me pondré en contacto contigo pronto",
+        "button": "Enviar mensaje",
+        "input1": {
+            "title": "Nombre",
+            "placeholder": "Tu nombre"
+        },
+        "input2": {
+            "title": "Correo electrónico",
+            "placeholder": "tu@email.com"
+        },
+        "input3": {
+            "title": "Mensaje",
+            "placeholder": "Tu mensaje aquí"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "navbar": {
+        "logo": "My Portfolio",
+        "home": "Home",
+        "about": "About me",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "footer": "My Portfolio. All rights reserved",
+    "home": {
+        "greetings": "Hi, I'm Erik Josue Uribe Arciniegas",
+        "subTitle": "Web Developer",
+        "button": "Get to know me"
+    },
+    "about": {
+        "title": "About Me",
+        "text": "I'm a web developer passionate about creating unique and functional digital experiences. With experience in Next.js, TypeScript, CSS, Tailwind, SASS, and HTML5, I strive to combine attractive design with efficient code to create innovative and high-impact web solutions."
+    },
+    "projects": {
+        "tecnologys": "Made with:",
+        "title": "My Projects",
+        "gitHub": "Check out on GitHub",
+        "web": "Visit website",
+        "project1": {
+            "title": "E-commerce with login google",
+            "description": "This is a E-commerce to sell products"
+        },
+        "project2": {
+            "title": "Post Page",
+            "description": "This is a page where you can post"
+        },
+        "project3": {
+            "title": "RestAdmin",
+            "description": "This is page to manage restaurants"
+        },
+        "project4": {
+            "title": "Dragon Ball Z API",
+            "description": "This is a page that shows all characters from Dragon Ball Z"
+        },
+        "project5": {
+            "title": "Rick and Morty API",
+            "description": "This is a page that shows all characters from Rick and Morty"
+        },
+        "project6": {
+            "title": "TriCasas",
+            "description": "This is a website where you can hire services and showcase your work"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "subTitle": "Send me a message",
+        "description": "Complete the form and I will contact you soon",
+        "button": "Send message",
+        "input1": {
+            "title": "Name",
+            "placeholder": "Your name"
+        },
+        "input2": {
+            "title": "Email",
+            "placeholder": "you@email.com"
+        },
+        "input3": {
+            "title": "Message",
+            "placeholder": "Your message here"
+        }
+    }
+}
