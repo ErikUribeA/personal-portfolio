@@ -51,7 +51,7 @@ export default function Projects() {
             id: 1,
             title: translate('project1.title'),
             description: translate('project1.description'),
-            img: '/images/project1.png',
+            img: '/images/project1.jpg',
             linkGithub: 'https://github.com/ErikUribeA/next-simulacrum',
             linkWeb: 'https://next-simulacrum.vercel.app',
             icons: [
@@ -65,7 +65,7 @@ export default function Projects() {
             id: 2,
             title: translate('project2.title'),
             description: translate('project2.description'),
-            img: '/images/project2.png',
+            img: '/images/project2.jpg',
             linkGithub: 'https://github.com/ErikUribeA/prueba',
             linkWeb: 'https://postfriendly.vercel.app/?vercelToolbarCode=0oCPQch1rUlf8-L',
             icons: [
@@ -79,7 +79,7 @@ export default function Projects() {
             id: 3,
             title: translate('project3.title'),
             description: translate('project3.description'),
-            img: '/images/project3.png',
+            img: '/images/project3.jpg',
             linkGithub: 'https://github.com/AlejandroEchavarriaRiwi/restadmin',
             linkWeb: 'https://www.restadmin.co',
             icons: [
@@ -95,7 +95,7 @@ export default function Projects() {
             id: 4,
             title: translate('project4.title'),
             description: translate('project4.description'),
-            img: '/images/project4.png',
+            img: '/images/project4.jpg',
             linkGithub: 'https://github.com/AlejandroEchavarriaRiwi/api-dragon-ball-z',
             linkWeb: 'https://alejandroechavarriariwi.github.io/dragonballriwi.github.io/',
             icons: [
@@ -107,7 +107,7 @@ export default function Projects() {
             id: 5,
             title: translate('project5.title'),
             description: translate('project5.description'),
-            img: '/images/project5.png',
+            img: '/images/project5.jpg',
             linkGithub: 'https://github.com/ErikUribeA/rickAndMorty-API',
             linkWeb: 'https://rickmortyapi1.netlify.app',
             icons: [
@@ -119,7 +119,7 @@ export default function Projects() {
             id: 6,
             title: translate('project6.title'),
             description: translate('project6.description'),
-            img: '/images/project6.png',
+            img: '/images/project6.jpg',
             linkGithub: 'https://github.com/AlejandroEchavarriaRiwi/proyecto',
             linkWeb: 'https://alejandroechavarriariwi.github.io/proyecto/',
             icons: [

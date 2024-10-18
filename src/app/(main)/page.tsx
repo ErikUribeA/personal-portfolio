@@ -46,6 +46,10 @@ const AnimatedLetters = ({ text }: { text: string }) => {
               : 'opacity-0 inline-block'
             }
           `}
+          initial={{
+            opacity: 0,
+            transform: animationCompleted ? 'none' : 'translateY(20px)',
+          }}
           style={{
             position: animationCompleted ? 'static' : 'relative',
           }}
