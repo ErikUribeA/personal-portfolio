@@ -45,12 +45,11 @@
             "title": "TriCasas",
             "description": "This is a website where you can hire services and showcase your work"
         }
-    },
+    },  
     "contact": {
         "title": "Contact",
         "subTitle": "Send me a message",
         "description": "Complete the form and I will contact you soon",
-        "button": "Send message",
         "input1": {
             "title": "Name",
             "placeholder": "Your name"
@@ -62,6 +61,12 @@
         "input3": {
             "title": "Message",
             "placeholder": "Your message here"
-        }
+        },
+        "button": "Send Message",
+        "sending": "Sending...",
+        "successMessage": "Message sent successfully!",
+        "errorMessage": "There was an error sending the form. Please, try again.",
+        "fieldRequired": "This field is require",
+        "invalidEmail": "Please, introduce a valid email"
     }
 }

@@ -48,9 +48,8 @@
     },
     "contact": {
         "title": "Contacto",
-        "subTitle": "Envíame un mensaje",
-        "description": "Completa el formulario y me pondré en contacto contigo pronto",
-        "button": "Enviar mensaje",
+        "subTitle": "Envíanos un mensaje",
+        "description": "Completa el formulario y te contactare pronto",
         "input1": {
             "title": "Nombre",
             "placeholder": "Tu nombre"
@@ -61,7 +60,13 @@
         },
         "input3": {
             "title": "Mensaje",
-            "placeholder": "Tu mensaje aquí"
-        }
+            "placeholder": "Escribe tu mensaje aquí"
+        },
+        "button": "Enviar mensaje",
+        "sending": "Enviando...",
+        "successMessage": "¡Mensaje enviado con éxito!",
+        "errorMessage": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+        "fieldRequired": "Este campo es requerido",
+        "invalidEmail": "Por favor, introduce un correo electrónico válido"
     }
 }
