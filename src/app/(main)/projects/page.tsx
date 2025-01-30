@@ -13,6 +13,7 @@ import { IconType } from 'react-icons/lib';
 import { RiNextjsLine } from "react-icons/ri";
 import { RiJavascriptLine } from "react-icons/ri";
 import { AiOutlineHtml5 } from "react-icons/ai";
+import { FaDocker } from "react-icons/fa";
 
 
 interface IconWithTooltipProps {
@@ -128,6 +129,22 @@ export default function Projects() {
                 <AiOutlineHtml5 key="react" className='inline-block text-4xl text-[#f472b6]' />
             ]
         },
+        {
+            id: 7,
+            title: translate('project7.title'),
+            description: translate('project7.description'),
+            img: '/images/project7.png',
+            linkGithub: 'https://github.com/ErikUribeA/turis-top',
+            linkWeb: 'https://turis-top.vercel.app',
+            icons: [
+                <FaReact key="react" className="inline-block text-4xl text-[#60a5fa]" />,
+                <TbBrandTypescript key="react" className='inline-block text-4xl text-[#c084fc]' />,
+                <FaSass key="react" className='inline-block text-4xl text-[#f472b6]' />,
+                <RiNextjsLine key="react" className='inline-block text-4xl text-[#60a5fa]' />,
+                <FaDocker  key="react" className='inline-block text-4xl text-[#c084fc]' />
+            ]
+        },
+
     ]
 
     return (

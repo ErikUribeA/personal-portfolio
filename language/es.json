@@ -44,6 +44,10 @@
         "project6": {
             "title": "TriCasas",
             "description": "Esta es una página web donde puedes contratar servicios y mostrar tu trabajo"
+        },
+        "project7": {
+            "title": "Turis-top",
+            "description": "Esta es una pagina que te ayudara en tu viaje atravez de antioquia"
         }
     },
     "contact": {
