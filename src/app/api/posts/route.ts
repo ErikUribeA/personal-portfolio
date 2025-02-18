@@ -3,7 +3,15 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
+const allowedOrigins = ["http://localhost:3000", "https://eriksportfolio.vercel.app"];
+
 export async function POST(req: NextRequest) {
+    const origin = req.headers.get("origin");
+    
+    if (origin && !allowedOrigins.includes(origin)) {
+        return new NextResponse("CORS not allowed", { status: 403 });
+    }
+
     const { title_en, title_es, description_en, description_es, img, linkGithub, linkWeb, icons } = await req.json();
 
     try {
@@ -16,23 +24,58 @@ export async function POST(req: NextRequest) {
                 img,
                 linkGithub,
                 linkWeb,
-                icons: icons // Guardamos los iconos directamente como JSON
+                icons // Guardamos los iconos directamente como JSON
             }
         });
 
-        return NextResponse.json(newPost);
+        return new NextResponse(JSON.stringify(newPost), {
+            status: 201,
+            headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": origin || "*",
+                "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type",
+            },
+        });
     } catch (error) {
         console.error(error);
-        return NextResponse.error();
+        return new NextResponse("Error al crear el post", { status: 500 });
     }
 }
 
-export async function GET() {
-    try {
-        const posts = await prisma.post.findMany()
+export async function GET(req: NextRequest) {
+    const origin = req.headers.get("origin");
 
-        return NextResponse.json(posts)
-    } catch (error) {
-        console.log(error)
+    if (origin && !allowedOrigins.includes(origin)) {
+        return new NextResponse("CORS not allowed", { status: 403 });
     }
+
+    try {
+        const posts = await prisma.post.findMany();
+
+        return new NextResponse(JSON.stringify(posts), {
+            status: 200,
+            headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": origin || "*",
+                "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type",
+            },
+        });
+    } catch (error) {
+        console.error(error);
+        return new NextResponse("Error al obtener los posts", { status: 500 });
+    }
+}
+
+// Manejar preflight para CORS
+export async function OPTIONS() {
+    return new NextResponse(null, {
+        status: 204,
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type",
+        },
+    });
 }

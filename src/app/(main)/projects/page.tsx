@@ -83,7 +83,7 @@ export default function Projects() {
                             <h3 className="text-2xl font-semibold text-pink-400 mb-2">
                                 {locale === 'en' ? project.title_en : project.title_es}
                             </h3>
-                            <p className="text-gray-300 mb-4">{project.description_en}</p>
+                            <p className="text-gray-300 mb-4"> {locale === 'en' ? project.description_en : project.description_es} </p>
                             <div className="relative w-full bg-gradient-to-br from-purple-600 to-pink-600 rounded-md mb-4 overflow-hidden group">
                                 <Image
                                     src={project.img}
