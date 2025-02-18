@@ -21,6 +21,7 @@ export default function FloatingButton() {
 
         Cookies.set("locale", newLanguage)
         router.refresh()
+
     }
 
     return (

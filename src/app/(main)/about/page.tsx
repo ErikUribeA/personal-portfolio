@@ -10,7 +10,7 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full animate-pulse"></div>
                     <div className="absolute inset-2 bg-blue-900 rounded-full overflow-hidden">
                         <Image
-                            src="/images/profile2.jpg"
+                            src="https://res.cloudinary.com/dren5zybs/image/upload/v1739890834/profile2_pgzql6.jpg"
                             alt="profile"
                             layout="fill"
                             objectFit="cover"
