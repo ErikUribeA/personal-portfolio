@@ -2,13 +2,16 @@ import * as FaIcons from "react-icons/fa";
 import * as TbIcons from "react-icons/tb";
 import * as RiIcons from "react-icons/ri";
 import * as SiIcons from "react-icons/si";
+import * as BiIcons from "react-icons/bi"
+
 import { IconType } from "react-icons";
 
 const iconLibraries: Record<string, Record<string, IconType>> = {
     fa: FaIcons,
     tb: TbIcons,
     ri: RiIcons,
-    si: SiIcons
+    si: SiIcons,
+    bi: BiIcons
 };
 
 export const getIconComponent = (library: string, name: string): IconType | null => {
